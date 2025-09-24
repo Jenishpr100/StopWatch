@@ -1,23 +1,24 @@
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: #111;
   color: #fff;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
+=
 h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin: 40px 0;
   margin-left: 250px;
 }
 
+=
 .buttons {
   display: flex;
   gap: 10px;
+  justify-content: center;=
+  margin-top: 20px;
 }
 
 button {
@@ -34,4 +35,3 @@ button {
 button:hover {
   background: #666;
 }
-
