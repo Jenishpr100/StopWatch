@@ -3,21 +3,22 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  height: 100vh; /* full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
 }
 
-=
 h1 {
   font-size: 3rem;
   margin: 40px 0;
-  margin-left: 250px;
+  text-align: center;
 }
 
-=
 .buttons {
   display: flex;
   gap: 10px;
-  justify-content: center;=
   margin-top: 20px;
 }
 
