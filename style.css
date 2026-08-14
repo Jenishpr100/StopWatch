@@ -1,38 +1,143 @@
+```css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  background: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  height: 100vh; /* full screen */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.card {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 20px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 40px 0;
-  text-align: center;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+#display {
+    font-family: "Courier New", monospace;
+    font-size: clamp(42px, 8vw, 72px);
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 35px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    margin-bottom: 35px;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.info strong {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    color: #ddd;
 }
 
 .buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background: #444;
-  color: #fff;
-  transition: background 0.2s;
+    border: 1px solid #333;
+    background: #181818;
+    color: white;
+
+    padding: 12px 28px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.2s ease;
 }
 
 button:hover {
-  background: #666;
+    background: #252525;
+    border-color: #555;
 }
+
+button:active {
+    transform: scale(0.96);
+}
+
+#start {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+#start:hover {
+    background: #ddd;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 35px 20px;
+    }
+
+    .info {
+        gap: 25px;
+    }
+
+    .info strong {
+        font-size: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+```
