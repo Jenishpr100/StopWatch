@@ -1,16 +1,42 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Stopwatch</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="display">00:00:00.000</h1>
-  <div class="buttons">
-    <button id="start">Start</button>
-    <button id="reset">Reset</button>
-  </div>
-  <script src="script.js"></script>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>STOPWATCH</h1>
+
+            <div id="display">00:00:00.000</div>
+
+            <div class="info">
+                <div>
+                    <span>Current Time</span>
+                    <strong id="currentTime">00:00:00</strong>
+                </div>
+
+                <div>
+                    <span>Started At</span>
+                    <strong id="startedAt">Not started</strong>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+```
