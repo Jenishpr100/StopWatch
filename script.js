@@ -1,4 +1,3 @@
-```javascript
 let startTime = 0;
 let difference = 0;
 let timerInterval = null;
@@ -92,4 +91,3 @@ resetBtn.addEventListener("click", resetTimer);
 // Current clock
 updateCurrentTime();
 setInterval(updateCurrentTime, 1000);
-```
